@@ -97,9 +97,11 @@
     tg.expand();
 
     function watchVideo() {
-      alert("📺 Advertisement will appear here.\n\nAd complete হলে ভিডিও Unlock হবে.");
+  show_11557851()
+    .then(() => {
+      alert("✅ Advertisement completed!");
+    })
+    .catch(() => {
+      alert("❌ Advertisement could not be shown. Please try again.");
+    });
     }
-  </script>
-
-</body>
-</html>
